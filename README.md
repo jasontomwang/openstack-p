@@ -1,3 +1,3 @@
 # openstack-p
 openstack Pike 
-install and deployment
+install and deployment for ubuntu 14.03
