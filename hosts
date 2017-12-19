@@ -1,0 +1,26 @@
+# openstack 主机配置清单
+---
+
+[all]
+10.20.0.31
+10.20.0.32
+10.20.0.33
+10.20.0.34
+10.20.0.35
+10.20.0.36
+[controller]
+10.20.0.31
+
+[computes]
+10.20.0.32
+10.20.0.33
+[swift-storage]
+10.20.0.35
+10.20.0.36
+[cinder-storage]
+10.20.0.34
+[all:children]
+controller
+computes
+swift-storage
+cinder-storage
