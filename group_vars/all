@@ -135,9 +135,9 @@ keystone_services:
 
 keystone_endpoints:
   - service_name: keystone
-    public_url: "http://keystone_hostname:5000/v2.0"
-    internal_url: "http://keytone_hostname:5000/v2.0"
-    admin_url: "http://keystone_hostname:35357/v2.0"
+    public_url: "http://{{ keystone_hostname }}:5000/v2.0"
+    internal_url: "http://{{ keytone_hostname }}:5000/v2.0"
+    admin_url: "http://{{ keystone_hostname }}:35357/v2.0"
 
 python3_env:
    ansible_python_interpreter: "/usr/bin/python3"
